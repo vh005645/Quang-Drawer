@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Nen toi chuyen mau teal -> tim than, co quang cam o goc tren ben phai (giong anh mau) -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="315"
+                android:startColor="#FF07242B"
+                android:centerColor="#FF14263A"
+                android:endColor="#FF2A1633" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:centerX="0.82"
+                android:centerY="0.12"
+                android:gradientRadius="65%p"
+                android:startColor="#66FF8A3D"
+                android:endColor="#00FF8A3D" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:centerX="0.12"
+                android:centerY="0.30"
+                android:gradientRadius="55%p"
+                android:startColor="#4439C7B5"
+                android:endColor="#0039C7B5" />
+        </shape>
+    </item>
+    <!-- lop toi dan o phia duoi cho phan luoi ung dung de doc -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="270"
+                android:startColor="#99000000"
+                android:centerColor="#00000000"
+                android:endColor="#00000000" />
+        </shape>
+    </item>
+</layer-list>

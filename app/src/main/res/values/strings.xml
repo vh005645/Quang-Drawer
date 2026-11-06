@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">All Apps</string>
+    <string name="loading_apps">Loading apps…</string>
+    <string name="section_apps">Applications</string>
+    <string name="apps_count">%1$d apps</string>
+</resources>

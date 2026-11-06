@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="true" />
+
+    <!-- Can de thay moi ung dung da cai va goi duoc TV Guard / 2 app phu tro (Android 11+) -->
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+
+    <application
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:icon="@drawable/ic_allapps"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.QuangDrawer"
+        android:banner="@drawable/banner">
+        <activity
+            android:name="quang.drawer.AppDrawerActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:stateNotNeeded="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+            <!-- Cho phep dat lam launcher (man hinh chinh) mac dinh cua TV -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
