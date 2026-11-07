@@ -18,7 +18,7 @@
         android:theme="@style/Theme.QuangDrawer"
         android:banner="@drawable/banner">
         <activity
-            android:name="quang.drawer.AppDrawerActivity"
+            android:name="tungbui.drawer.MainActivity"
             android:label="@string/app_name"
             android:launchMode="singleTask"
             android:stateNotNeeded="true"

@@ -2,16 +2,16 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 android {
-    namespace "quang.drawer"
+    namespace "tungbui.drawer"
     compileSdk 34
 
     defaultConfig {
-        // Ten goi CO DINH la quang.drawer (ca debug lan release)
-        applicationId "quang.drawer"
+        // Ten goi CO DINH la tungbui.drawer (ca debug lan release)
+        applicationId "tungbui.drawer"
         minSdk 28
         targetSdk 34
-        versionCode 6
-        versionName "2.2.0"
+        versionCode 7
+        versionName "2.2.1"
     }
 
     buildTypes {
