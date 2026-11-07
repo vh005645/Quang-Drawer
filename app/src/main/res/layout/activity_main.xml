@@ -1,109 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clipChildren="false"
-    android:clipToPadding="false"
-    android:orientation="vertical"
-    android:paddingStart="48dp"
-    android:paddingEnd="48dp"
-    android:paddingTop="28dp"
-    android:paddingBottom="12dp">
+    android:clipToPadding="false">
 
-    <!-- Dau trang: dong ho + ngay (trai), bieu tuong (phai) -->
-    <LinearLayout
+    <View
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:background="@drawable/scrim" />
 
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+
+        <!-- Dau trang: dong ho + ngay (trai); Input / WiFi / Cai dat (phai) -->
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:gravity="top"
+            android:orientation="horizontal">
 
-            <TextClock
-                android:id="@+id/clock_time"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
-                android:format12Hour="HH:mm"
-                android:format24Hour="HH:mm"
-                android:includeFontPadding="false"
-                android:textColor="#FFFFFFFF"
-                android:textSize="64sp" />
+                android:layout_weight="1"
+                android:orientation="vertical">
 
-            <TextClock
-                android:id="@+id/clock_date"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:format12Hour="EEEE, dd/MM/yyyy"
-                android:format24Hour="EEEE, dd/MM/yyyy"
-                android:textColor="#B3FFFFFF"
-                android:textSize="18sp" />
+                <TextClock
+                    android:id="@+id/clock_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:format12Hour="HH:mm"
+                    android:format24Hour="HH:mm"
+                    android:includeFontPadding="false"
+                    android:shadowColor="#80000000"
+                    android:shadowRadius="6"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="56sp" />
+
+                <TextClock
+                    android:id="@+id/clock_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:format12Hour="EEEE, dd/MM/yyyy"
+                    android:format24Hour="EEEE, dd/MM/yyyy"
+                    android:shadowColor="#80000000"
+                    android:shadowRadius="6"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btn_input"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/btn_round"
+                android:contentDescription="@string/input_source"
+                android:focusable="true"
+                android:padding="11dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_input" />
+
+            <ImageButton
+                android:id="@+id/btn_wifi"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/btn_round"
+                android:contentDescription="@string/wifi"
+                android:focusable="true"
+                android:padding="11dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_wifi" />
+
+            <ImageButton
+                android:id="@+id/btn_settings"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/btn_round"
+                android:contentDescription="@string/settings"
+                android:focusable="true"
+                android:padding="11dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_settings" />
         </LinearLayout>
 
-        <ImageView
-            android:layout_width="44dp"
-            android:layout_height="44dp"
-            android:alpha="0.9"
-            android:contentDescription="@null"
-            android:scaleType="fitCenter"
-            android:src="@drawable/ic_allapps" />
-    </LinearLayout>
-
-    <!-- Tieu de muc -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="22dp"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
 
         <TextView
+            android:id="@+id/move_hint"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/section_apps"
-            android:textColor="#FFFFFFFF"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:layout_marginStart="6dp"
+            android:shadowColor="#80000000"
+            android:shadowRadius="6"
+            android:text="@string/move_hint"
+            android:textColor="#FFFF9A3D"
+            android:textSize="14sp"
+            android:visibility="gone" />
 
-        <TextView
-            android:id="@+id/apps_count"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:textColor="#80FFFFFF"
-            android:textSize="14sp" />
-    </LinearLayout>
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:clipChildren="false"
-        android:clipToPadding="false">
-
+        <!-- 2 hang the ung dung; chieu cao dat trong code -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/grid"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="120dp"
             android:clipChildren="false"
             android:clipToPadding="false"
-            android:paddingTop="10dp"
-            android:paddingBottom="24dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
             android:scrollbars="none" />
+    </LinearLayout>
 
-        <TextView
-            android:id="@+id/loading"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/loading_apps"
-            android:textColor="#B3FFFFFF"
-            android:textSize="16sp" />
-    </FrameLayout>
-
-</LinearLayout>
+</FrameLayout>

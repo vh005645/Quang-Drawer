@@ -23,6 +23,20 @@ Nếu bạn sử dụng ứng dụng **Downloader** trên Android TV, hãy nhậ
 *Phát triển bởi daivietpda.*
 
 
+## Phiên bản 2.2.0 - bố cục theo ảnh TV mẫu, nhẹ RAM
+- Đồng hồ + ngày góc trái trên; góc phải trên: Nguồn vào (Input), Wi-Fi, Cài đặt.
+- 2 hàng x 9 thẻ app nhỏ (16:9) ở dưới; hơn 18 app thì cuộn xuống.
+- Đổi hình nền: nhấn giữ nút Cài đặt -> "Đổi hình nền" (hoặc chép ảnh vào Android/data/quang.drawer/files/wallpaper.jpg).
+  Ảnh được cắt/thu nhỏ đúng bằng màn hình và lưu 1 file; chỉ giữ 1 bitmap RGB_565 (~4 MB).
+- Icon/banner chỉ tải khi hiện ra (bộ nhớ đệm nhỏ), không giữ icon của mọi app.
+- Nhấn giữ OK trên app: Di chuyển (mũi tên đổi chỗ, OK xong) / Ẩn - Hiện lại. Nhấn giữ nút Cài đặt -> "Hiện các app đã ẩn".
+
+## Phiên bản 2.1.0 - một hàng ứng dụng ngang
+- Ứng dụng xếp 1 hàng ngang ở dưới cùng, bấm trái/phải để chọn; thẻ và icon nhỏ gọn cân đối.
+- Góc phải trên: nút Cài đặt (cài đặt gốc của TV) và nút "hiện app đã ẩn".
+- Nhấn giữ Enter/OK trên một app: menu "Di chuyển vị trí" (trái/phải đổi chỗ, OK để xong) và "Ẩn / Hiện lại ứng dụng".
+  Thứ tự và danh sách ẩn được lưu lại.
+
 ## Phiên bản 2.0.0 - giao diện mới, tên gói quang.drawer
 - Giao diện mới: nền gradient tối, đồng hồ + ngày ở đầu trang, lưới thẻ 16:9 bo góc (có banner thì hiện banner, không thì icon + tên),
   ô đang chọn có viền trắng và phóng to nhẹ. Lưới tự cập nhật khi cài / gỡ ứng dụng.

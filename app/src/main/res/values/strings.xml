@@ -4,4 +4,25 @@
     <string name="loading_apps">Loading apps…</string>
     <string name="section_apps">Applications</string>
     <string name="apps_count">%1$d apps</string>
+    <string name="settings">Settings</string>
+    <string name="show_hidden">Show hidden apps</string>
+    <string name="hidden_on">Showing hidden apps</string>
+    <string name="hidden_off">Hidden apps are concealed</string>
+    <string name="menu_move">Move</string>
+    <string name="menu_hide">Hide app</string>
+    <string name="menu_unhide">Show app again</string>
+    <string name="move_hint">◀ ▶ to move · OK to finish</string>
+    <string name="settings_fail">Cannot open Settings</string>
+    <string name="input_source">Input source</string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="menu_title">Launcher options</string>
+    <string name="menu_wallpaper">Change wallpaper</string>
+    <string name="menu_wallpaper_reset">Default wallpaper</string>
+    <string name="menu_show_hidden">Show hidden apps</string>
+    <string name="menu_hide_hidden">Conceal hidden apps</string>
+    <string name="wallpaper_ok">Wallpaper updated</string>
+    <string name="wallpaper_fail">Could not use that image</string>
+    <string name="wallpaper_no_picker">No image picker found. Copy a picture to %1$s named wallpaper.jpg, then choose Change wallpaper again</string>
+    <string name="no_input">No input source found</string>
+    <string name="input_fail">Cannot open this input</string>
 </resources>

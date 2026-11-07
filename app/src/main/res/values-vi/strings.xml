@@ -4,4 +4,25 @@
     <string name="loading_apps">Đang tải ứng dụng…</string>
     <string name="section_apps">Ứng dụng</string>
     <string name="apps_count">%1$d ứng dụng</string>
+    <string name="settings">Cài đặt</string>
+    <string name="show_hidden">Hiện app đã ẩn</string>
+    <string name="hidden_on">Đang hiện cả app đã ẩn</string>
+    <string name="hidden_off">Đã ẩn lại các app đã ẩn</string>
+    <string name="menu_move">Di chuyển vị trí</string>
+    <string name="menu_hide">Ẩn ứng dụng</string>
+    <string name="menu_unhide">Hiện lại ứng dụng</string>
+    <string name="move_hint">◀ ▶ để di chuyển · bấm OK để xong</string>
+    <string name="settings_fail">Không mở được Cài đặt</string>
+    <string name="input_source">Nguồn vào (Input)</string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="menu_title">Tùy chọn launcher</string>
+    <string name="menu_wallpaper">Đổi hình nền</string>
+    <string name="menu_wallpaper_reset">Về hình nền mặc định</string>
+    <string name="menu_show_hidden">Hiện các app đã ẩn</string>
+    <string name="menu_hide_hidden">Giấu lại các app đã ẩn</string>
+    <string name="wallpaper_ok">Đã đổi hình nền</string>
+    <string name="wallpaper_fail">Không dùng được ảnh này</string>
+    <string name="wallpaper_no_picker">TV không có bộ chọn ảnh. Hãy chép ảnh vào %1$s với tên wallpaper.jpg rồi chọn lại Đổi hình nền</string>
+    <string name="no_input">Không tìm thấy nguồn vào</string>
+    <string name="input_fail">Không mở được nguồn vào này</string>
 </resources>
